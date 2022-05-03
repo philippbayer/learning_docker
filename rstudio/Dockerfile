@@ -2,7 +2,7 @@ FROM rocker/rstudio:4.1.2
 
 LABEL source="https://github.com/davetang/learning_docker/blob/main/rstudio/Dockerfile"
 
-MAINTAINER Dave Tang <me@davetang.org>
+MAINTAINER Philipp Bayer <philippbay@gmail.com>
 
 RUN apt-get clean all && \
 	apt-get update && \
@@ -19,6 +19,7 @@ RUN apt-get clean all && \
 		liblzma-dev \
 		libglpk40 \
 		libgit2-28 \
+		libgeos-dev \
 	&& apt-get clean all && \
 	apt-get purge && \
 	rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
