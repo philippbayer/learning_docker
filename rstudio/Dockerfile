@@ -1,6 +1,6 @@
 FROM rocker/rstudio:4.1.2
 
-LABEL source="https://github.com/davetang/learning_docker/blob/main/rstudio/Dockerfile"
+LABEL source="https://github.com/philippbayer/learning_docker/blob/main/rstudio/Dockerfile"
 
 MAINTAINER Philipp Bayer <philippbay@gmail.com>
 
