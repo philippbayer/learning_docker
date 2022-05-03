@@ -25,7 +25,7 @@ RUN apt-get clean all && \
 	rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN Rscript -e "install.packages(c('rmarkdown', 'tidyverse', 'workflowr', 'BiocManager'));"
-RUN Rscript -e "BiocManager::install(version = '3.14')"
+RUN Rscript -e "BiocManager::install(version = '3.12')"
 
 COPY user-settings /home/rstudio/.rstudio/monitored/user-settings/user-settings
 COPY .Rprofile /home/rstudio/
